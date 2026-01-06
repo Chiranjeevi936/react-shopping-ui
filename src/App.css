@@ -1,38 +1,119 @@
-.App {
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+h1{
+  border-bottom: 1px solid black;
+  text-align: center;
+  /* background-color: white; */
+}
+
+/* Main Page */
+.MainPage{
+  align-items: center;
+  width: 100%;
+}
+
+/* Header Section */
+.headerSection{
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+.center ul li{
+  display: inline-flex;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.title{
+  font-size: 1rem;
+  text-align: center;
+}
+.left{
+  flex: 4; 
+}
+.center{
+  flex:4;
+  margin: auto auto;  
+ 
+}
+.search{
+  flex:2;
+  margin: auto auto;
+ 
+}
+
+.search input{
+  border-radius: 7px;
+  padding: 10px;
+ 
+}
+.right{
+  flex:4; 
+  display: flex;
+  justify-content: space-around;
+  margin: auto auto;  
+}
+
+/* banner Section */
+.bannerBox{
+  margin: 2px 0px;
+}
+
+.bannerBox img{
+  width: 100%;
+  height: 100px;
+}
+
+/* collection sections */
+.collectionSection h2{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menImages{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.menImages img{
+  padding: 2px;;
+  width: 20%;
+  height: 220px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.womenImages{
+  display: flex;
+
+  width: 100%;
+  gap: 10px;
+}
+
+.womenImages img{
+  padding: 2px;;
+  width: 20%;
+  height: 220px;
+}
+
+
+/* footer Section */
+
+.footerBox{
+  margin: 2px 0px;
+}
+.footerBox img{
+  width: 100%;
+  height: 100px;
 }
